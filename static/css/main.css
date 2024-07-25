@@ -1,0 +1,124 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Navbar styles */
+nav {
+    background-color: white;
+    border-bottom: 1px solid #eaeaea;
+    padding: 1rem 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Set a max width */
+    margin: 0 auto; /* Center align */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+nav .brand {
+    font-size: 1.5rem;
+    color: blue;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #6c757d;
+    font-weight: bold;
+    font-size: 1rem; /* Font size */
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #343a40;
+}
+
+/* Header styles */
+header {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 80px 0; /* Increase padding */
+}
+
+header h1 {
+    font-size: 3rem; /* Font size */
+    font-weight: bold;
+    color: #6f42c1;
+    background: linear-gradient(to right, #6f42c1, #ff5d8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Footer styles */
+footer {
+    background-color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-top: 1px solid #eaeaea; /* Add top border */
+}
+
+footer .container {
+    max-width: 1200px; /* Set a max width */
+    margin: 0 auto; /* Center align */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+footer .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+footer .col-auto {
+    margin-bottom: 1rem;
+}
+
+footer .small {
+    font-size: 0.875rem; /* Small font size */
+    color: #6c757d; /* Grey color */
+    margin: 0; /* Remove default margin */
+}
+
+footer .small a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+footer .small a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+footer .mx-1 {
+    margin: 0 0.25rem; /* Margin on left and right */
+}
+
+/* Responsive adjustments */
+@media (min-width: 576px) {
+    footer .row {
+        flex-direction: row; /* Row direction for larger screens */
+    }
+
+    footer .col-auto {
+        margin-bottom: 0; /* Remove margin bottom for larger screens */
+    }
+}
